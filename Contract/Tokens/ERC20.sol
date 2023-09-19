@@ -740,3 +740,5 @@ contract MyToken is ERC20 {
         return 9;
     }
 }
+
+
