@@ -278,7 +278,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Contract/Tokens/ERC20.sol": "IERC20Metadata"
+			"Contract/Tokens/Tax.sol": "IERC20Metadata"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -292,12 +292,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Contract/Tokens/ERC20.sol": {
-			"keccak256": "0x2cd5f9aa87fc586cc89049003670ef1b00ca70ffb8534906e0467c0bd0622887",
+		"Contract/Tokens/Tax.sol": {
+			"keccak256": "0xbd663ea93e095b2975e3bfa2cbd8da8ee2a87ebe3e971c598dac4f7702367b8d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f2354d325c3818b744057d0c260781a00f78a49ed7eacf924fcd8e51a51135a9",
-				"dweb:/ipfs/QmXX5QUgPembMu1rkqzVxjwMGsGjUVnTCfu3QiPpqsb7NK"
+				"bzz-raw://3828609a372c3a3132f8c6a3e617c4f8349555f9900327ff524db0e28e3e90b2",
+				"dweb:/ipfs/QmauMLuuH3BMAhKsUjeCLFUakzq8EqVXjQoizJYHe1dK5M"
 			]
 		}
 	},

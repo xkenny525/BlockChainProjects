@@ -716,27 +716,3 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
         }
     }
 }
-
-/**
-* @dev MyToken only for test.
-*
-* - notice: Don’t use any account with valuable tokens!!!
-* - notice: Don’t use any account with valuable tokens!!!
-* - notice: Don’t use any account with valuable tokens!!!
-*
-* ------------------------------- kungfu Panda (^_^)
-*/
-contract MyToken is ERC20 {
-    /**
-    * @dev Config name and symbol of Token by call Parent Contract Constructor.
-    * 
-    * - totalSuply : Configure on Contract creation 
-    */
-    constructor(uint256 totalSuply) ERC20("MyToken", "PANDA") {
-        _mint(_msgSender(), totalSuply);
-    }
-
-    function decimals() public view virtual override returns (uint8) {
-        return 9;
-    }
-}
