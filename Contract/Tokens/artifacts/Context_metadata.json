@@ -34,11 +34,11 @@
 	},
 	"sources": {
 		"Contract/Tokens/Tax.sol": {
-			"keccak256": "0x135fd1ace005bed67ca49c00780303f2586d0ad9e296c4ec81b4e2915011e6ba",
+			"keccak256": "0x2cd5f9aa87fc586cc89049003670ef1b00ca70ffb8534906e0467c0bd0622887",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6c98b65b8dc77b7f2783b287d4dccec441c71c234d1a999b028b3034af6eb80f",
-				"dweb:/ipfs/QmRmzyaGLkUDuKZUawkiPY4bxRrfFguxyQfxdL6SBKR7kQ"
+				"bzz-raw://f2354d325c3818b744057d0c260781a00f78a49ed7eacf924fcd8e51a51135a9",
+				"dweb:/ipfs/QmXX5QUgPembMu1rkqzVxjwMGsGjUVnTCfu3QiPpqsb7NK"
 			]
 		}
 	},
