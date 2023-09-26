@@ -466,10 +466,12 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     ) internal virtual {}
 }
 
-contract Panda is ERC20, Ownable {
+contract Panda is ERC20, Ownable {    
     using Address for address payable;
 
-    IUniswapV2Router02  public  router;
+    enum Lock { UNLOCKED, LOCKED }
+
+    IUniswapV2Router02  public  router;    
     address             public  pair;
 
     mapping (address => bool) private _isExcludedFromTax;
@@ -486,12 +488,12 @@ contract Panda is ERC20, Ownable {
     uint256 public  txMaxLimitBuy;
     uint256 public  txMaxLimitSell;       
 
-    uint256 private unlocked = 1;
-    modifier lock() {
-        require(unlocked == 1, 'UniswapV2: LOCKED');
-        unlocked = 0;
+    Lock private lock = Lock.UNLOCKED;
+    modifier mutex() {
+        require(lock == Lock.UNLOCKED, 'LOCKED');
+        lock = Lock.LOCKED;
         _;
-        unlocked = 1;
+        lock = Lock.UNLOCKED;
     }
    
     constructor () ERC20("Animal", "Panda") {   
